@@ -1,10 +1,10 @@
 "use client";
 
 import {FormEvent, useState} from "react";
-import {Divisor, fizzBuzzUpTo} from "@/fizzbuzz";
 import {defaultDivisors, FizzBuzzControls, getFizzBuzzParametersFromUser} from "@/ui/FizzBuzzControls";
 import {List} from "@/ui/List";
 import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
+import {Divisor, fizzBuzzUpTo} from "@/utils/fizzbuzz";
 
 export default function FizzBuzz() {
     const [divisors, setDivisors] = useState<[Divisor, Divisor]>(defaultDivisors);

@@ -1,12 +1,12 @@
 "use client";
 
 import React, {FormEvent, useState} from "react";
-import {fibonacci} from "@/fibonacci";
-import {Divisor, fizzBuzz} from "@/fizzbuzz";
 import {FibonacciControls, getFibonacciParametersFromUser} from "@/ui/FibonacciControls";
 import {defaultDivisors, FizzBuzzControls, getFizzBuzzParametersFromUser} from "@/ui/FizzBuzzControls";
 import {List} from "@/ui/List";
 import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
+import {fibonacci} from "@/utils/fibonacci";
+import {Divisor, fizzBuzz} from "@/utils/fizzbuzz";
 
 export default function Combined() {
     const [range, setRange] = useState(10);

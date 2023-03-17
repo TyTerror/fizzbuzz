@@ -1,10 +1,10 @@
 "use client";
 
 import {FormEvent, useState} from "react";
-import {fibonacci} from "@/fibonacci";
 import {FibonacciControls, getFibonacciParametersFromUser} from "@/ui/FibonacciControls";
 import {List} from "@/ui/List";
 import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
+import {fibonacci} from "@/utils/fibonacci";
 
 export default function Fibonacci() {
     const [fibonacciParams, setFibonacciParams] = useState({
