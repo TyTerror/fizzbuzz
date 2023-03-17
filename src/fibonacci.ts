@@ -1,4 +1,4 @@
-export function fibonacci(n: number, y: number = 1, z: number = 2): BigInt[] {
+export function fibonacci(n: number, y = 1, z = 2): bigint[] {
     const f: bigint[] = [];
     for (let i = 0; i < n; i++) {
         if (i === 0 || i === 1) {

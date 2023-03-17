@@ -12,7 +12,7 @@ export function FibonacciControls() {
     return <div className="flex flex-col gap-5 w-fit">
         <Control name="Y" defaultValue={1}/>
         <Control name="Z" defaultValue={2}/>
-    </div>
+    </div>;
 }
 
 export function getFibonacciParametersFromUser(e: FormEvent<HTMLFormElement>) {
@@ -21,5 +21,5 @@ export function getFibonacciParametersFromUser(e: FormEvent<HTMLFormElement>) {
     const y = parseInt(data.get("Y") as string);
     const z = parseInt(data.get("Z") as string);
 
-    return { y, z };
+    return {y, z};
 }

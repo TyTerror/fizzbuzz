@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import {FibonacciControls, getFibonacciParametersFromUser} from "@/ui/FibonacciControls";
-import {defaultDivisors, FizzBuzzControls, getFizzBuzzParametersFromUser} from "@/ui/FizzBuzzControls";
 import React, {FormEvent, useState} from "react";
-import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
 import {fibonacci} from "@/fibonacci";
 import {Divisor, fizzBuzz} from "@/fizzbuzz";
+import {FibonacciControls, getFibonacciParametersFromUser} from "@/ui/FibonacciControls";
+import {defaultDivisors, FizzBuzzControls, getFizzBuzzParametersFromUser} from "@/ui/FizzBuzzControls";
 import {List} from "@/ui/List";
+import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
 
 export default function Combined() {
     const [range, setRange] = useState(10);
-    const [fibonacciParameters, setFibonacciParameters] = useState({ y: 1, z: 2 });
+    const [fibonacciParameters, setFibonacciParameters] = useState({y: 1, z: 2});
     const [divisors, setDivisors] = useState<[Divisor, Divisor]>(defaultDivisors);
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -23,10 +23,10 @@ export default function Combined() {
         setDivisors(fizzBuzzParameters);
         setFibonacciParameters(fibonacciParameters);
         setRange(range);
-    }
+    };
 
-    const { y, z } = fibonacciParameters;
-    const numbers = fibonacci(range, y, z).map(x => fizzBuzz(Number(x), divisors))
+    const {y, z} = fibonacciParameters;
+    const numbers = fibonacci(range, y, z).map(x => fizzBuzz(Number(x), divisors));
     return (
         <main className="p-5">
             <form onSubmit={onSubmit} className="flex flex-col gap-5">

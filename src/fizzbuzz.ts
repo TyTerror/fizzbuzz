@@ -15,11 +15,11 @@ export function fizzBuzz(n: number, divisors: Divisor[]): string {
     let result = "";
     for (const divisor of divisors) {
         if (n % divisor.divisor === 0) {
-            result += divisor.label
+            result += divisor.label;
         }
     }
     if (result == "") {
         result = n.toString();
     }
-    return result
+    return result;
 }

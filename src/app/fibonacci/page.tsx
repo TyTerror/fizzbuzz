@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { FormEvent, useState } from "react";
-import { fibonacci } from "@/fibonacci";
+import {FormEvent, useState} from "react";
+import {fibonacci} from "@/fibonacci";
 import {FibonacciControls, getFibonacciParametersFromUser} from "@/ui/FibonacciControls";
-import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
 import {List} from "@/ui/List";
+import {getRangeFromUser, SubmitForm} from "@/ui/SubmitForm";
 
 export default function Fibonacci() {
     const [fibonacciParams, setFibonacciParams] = useState({
@@ -17,11 +17,11 @@ export default function Fibonacci() {
         e.preventDefault();
 
         const range = getRangeFromUser(e);
-        const { y, z } = getFibonacciParametersFromUser(e);
-        setFibonacciParams({ range, y, z });
-    }
+        const {y, z} = getFibonacciParametersFromUser(e);
+        setFibonacciParams({range, y, z});
+    };
 
-    const { range, y, z } = fibonacciParams;
+    const {range, y, z} = fibonacciParams;
     const numbers = fibonacci(range, y, z).map(x => x.toString());
     return (
         <main className="p-5">
