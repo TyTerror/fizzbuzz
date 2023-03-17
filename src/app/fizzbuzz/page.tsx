@@ -21,7 +21,7 @@ export default function FizzBuzz() {
 
     const numbers = fizzBuzzUpTo(range, divisors);
     return (
-        <main className="p-5">
+        <main className="px-5">
             <form className="flex flex-col gap-5" onSubmit={onSubmit}>
                 <FizzBuzzControls/>
                 <SubmitForm/>

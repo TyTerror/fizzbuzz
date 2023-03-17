@@ -1,7 +1,7 @@
 "use client";
 
 import {FormEvent} from "react";
-import {Divisor} from "@/fizzbuzz";
+import {Divisor} from "@/utils/fizzbuzz";
 
 export const defaultDivisors: [Divisor, Divisor] = [{
     divisor: 3,
@@ -10,7 +10,6 @@ export const defaultDivisors: [Divisor, Divisor] = [{
     divisor: 5,
     label: "Buzz"
 }];
-
 
 /**
  * Sets up the UI that allows a user to change the divisors for fizzbuzz (example: 3 and 5) and the labels that are

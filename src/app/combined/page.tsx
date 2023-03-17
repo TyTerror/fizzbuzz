@@ -28,7 +28,7 @@ export default function Combined() {
     const {y, z} = fibonacciParameters;
     const numbers = fibonacci(range, y, z).map(x => fizzBuzz(Number(x), divisors));
     return (
-        <main className="p-5">
+        <main className="px-5">
             <form onSubmit={onSubmit} className="flex flex-col gap-5">
                 <FizzBuzzControls/>
                 <FibonacciControls/>

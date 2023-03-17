@@ -19,7 +19,6 @@ module.exports = {
             env: {
                 "jest/globals": true, // now **/*.test.js files' env has both es6 *and* jest
             },
-            plugins: ["jest"],
             extends: ["plugin:jest/recommended", "plugin:jest/style", "plugin:testing-library/react"],
         },
         {

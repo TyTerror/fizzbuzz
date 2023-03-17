@@ -1,5 +1,5 @@
-import {fizzBuzz} from "@/utils/fizzbuzz";
 import {defaultDivisors} from "@/ui/FizzBuzzControls";
+import {fizzBuzz} from "@/utils/fizzbuzz";
 
 describe("Fibonacci Tests", () => {
     test("First 5 numbers", () => {

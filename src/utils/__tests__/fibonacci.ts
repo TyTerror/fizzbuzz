@@ -7,8 +7,10 @@ describe("Fibonacci Tests", () => {
             BigInt(1),
             BigInt(2),
             BigInt(3),
-            BigInt(5)
+            BigInt(5),
+            BigInt(8),
+            BigInt(13),
         );
-        expect(fibonacci(5)).toEqual(answer);
+        expect(fibonacci(7)).toEqual(answer);
     });
 });

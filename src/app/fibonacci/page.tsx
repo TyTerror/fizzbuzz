@@ -24,8 +24,8 @@ export default function Fibonacci() {
     const {range, y, z} = fibonacciParams;
     const numbers = fibonacci(range, y, z).map(x => x.toString());
     return (
-        <main className="p-5">
-            <form className="flex flex-col gap-10" onSubmit={onSubmit}>
+        <main className="px-5">
+            <form className="flex flex-col gap-5" onSubmit={onSubmit}>
                 <FibonacciControls/>
                 <SubmitForm/>
 
