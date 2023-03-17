@@ -8,17 +8,17 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <div className={styles.grid}>
-                <Card title="FizzBuzz" description="Run Fizz Buzz program"/>
-                <Card title="Fibonacci" description="Run Fibonacci program"/>
-                <Card title="Combined" description="Run both FizzBuzz and Fibonacci"/>
+                <Card title="FizzBuzz" description="Run Fizz Buzz program" href="/fizzbuzz"/>
+                <Card title="Fibonacci" description="Run Fibonacci program" href="/fibonacci"/>
+                <Card title="Combined" description="Run both FizzBuzz and Fibonacci" href="/combined"/>
             </div>
         </main>
     );
 }
 
-function Card(props: { title: string, description: string }) {
+function Card(props: { title: string, description: string, href: string }) {
     return (
-        <Link href="/fizzbuzz" className={styles.card}>
+        <Link href={props.href} className={styles.card}>
             <h2 className={inter.className}>
                 {props.title} <span>-&gt;</span>
             </h2>

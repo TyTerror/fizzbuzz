@@ -1,6 +1,6 @@
 "use client"
 
-import {ChangeEvent, FormEvent, useState} from "react";
+import { FormEvent, useState } from "react";
 
 type Divisor = {
     divisor: number,
@@ -48,7 +48,7 @@ export default function FizzBuzz() {
                     <button type="reset">Reset form</button>
                 </div>
 
-                <ul>
+                <ul className="list-disc">
                     { fizzBuzz(fizzBuzzNumber, options).map((result, index) => <li key={index + 1}>{result}</li>) }
                 </ul>
             </form>
