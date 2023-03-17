@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * This stylesheet just contains some basic global styles.
+ */
+
 * {
     box-sizing: content-box;
 }

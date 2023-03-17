@@ -7,5 +7,6 @@ describe("Fibonacci Tests", () => {
         expect(fizzBuzz(3, defaultDivisors)).toBe("Fizz");
         expect(fizzBuzz(5, defaultDivisors)).toBe("Buzz");
         expect(fizzBuzz(15, defaultDivisors)).toBe("FizzBuzz");
+        expect(fizzBuzz(17, defaultDivisors)).toBe("17");
     });
 });

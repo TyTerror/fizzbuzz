@@ -22,12 +22,12 @@ export default function FizzBuzz() {
     const numbers = fizzBuzzUpTo(range, divisors);
     return (
         <main className="px-5">
-            <form className="flex flex-col gap-5" onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="flex flex-col gap-5">
                 <FizzBuzzControls/>
                 <SubmitForm/>
-
-                <List items={numbers}/>
             </form>
+
+            <List items={numbers}/>
         </main>
     );
 }
