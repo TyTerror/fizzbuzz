@@ -11,11 +11,11 @@ export function fizzBuzzUpTo(n: number, divisors: Divisor[]): string[] {
     return results;
 }
 
-export function fizzBuzz(n: number, divisors: Divisor[]): string {
+export function fizzBuzz(n: bigint, divisors: Divisor[]): string {
     let result = "";
-    for (const divisor of divisors) {
-        if (n % divisor.divisor === 0n) {
-            result += divisor.label;
+    for (const { divisor, label } of divisors) {
+        if (n % BigInt(divisor) === 0n) {
+            result += label;
         }
     }
     if (result == "") {
