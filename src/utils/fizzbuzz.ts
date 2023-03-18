@@ -5,7 +5,7 @@ export type Divisor = {
 
 export function fizzBuzzUpTo(n: number, divisors: Divisor[]): string[] {
     const results = [];
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1n; i <= n; i++) {
         results.push(fizzBuzz(i, divisors));
     }
     return results;
@@ -14,7 +14,7 @@ export function fizzBuzzUpTo(n: number, divisors: Divisor[]): string[] {
 export function fizzBuzz(n: number, divisors: Divisor[]): string {
     let result = "";
     for (const divisor of divisors) {
-        if (n % divisor.divisor === 0) {
+        if (n % divisor.divisor === 0n) {
             result += divisor.label;
         }
     }

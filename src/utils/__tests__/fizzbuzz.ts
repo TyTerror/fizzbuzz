@@ -3,10 +3,10 @@ import {fizzBuzz} from "@/utils/fizzbuzz";
 
 describe("Fibonacci Tests", () => {
     test("First 5 numbers", () => {
-        expect(fizzBuzz(1, defaultDivisors)).toBe("1");
-        expect(fizzBuzz(3, defaultDivisors)).toBe("Fizz");
-        expect(fizzBuzz(5, defaultDivisors)).toBe("Buzz");
-        expect(fizzBuzz(15, defaultDivisors)).toBe("FizzBuzz");
-        expect(fizzBuzz(17, defaultDivisors)).toBe("17");
+        expect(fizzBuzz(1n, defaultDivisors)).toBe("1");
+        expect(fizzBuzz(3n, defaultDivisors)).toBe("Fizz");
+        expect(fizzBuzz(5n, defaultDivisors)).toBe("Buzz");
+        expect(fizzBuzz(15n, defaultDivisors)).toBe("FizzBuzz");
+        expect(fizzBuzz(17n, defaultDivisors)).toBe("17");
     });
 });

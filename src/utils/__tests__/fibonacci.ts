@@ -3,13 +3,13 @@ import {fibonacci} from "@/utils/fibonacci";
 describe("Fibonacci Tests", () => {
     test("First 5 numbers", () => {
         const answer = Array.of(
-            BigInt(1),
-            BigInt(1),
-            BigInt(2),
-            BigInt(3),
-            BigInt(5),
-            BigInt(8),
-            BigInt(13),
+            1n,
+            1n,
+            2n,
+            3n,
+            5n,
+            8n,
+            13n
         );
         expect(fibonacci(7)).toEqual(answer);
     });
